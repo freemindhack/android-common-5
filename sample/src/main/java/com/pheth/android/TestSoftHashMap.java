@@ -1,6 +1,5 @@
 package com.pheth.android;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -14,7 +13,7 @@ import com.pheth.android.library.utils.SoftHashMap;
  * Email: danhantao@yeah.net
  * QQ: 1152892859
  */
-public class TestSoftHashMap extends Activity {
+public class TestSoftHashMap extends PrintLogActivity {
     private static final String TAG = TestSoftHashMap.class.getSimpleName();
     // Only have put,get,containsKey
     private SoftHashMap<String, String> softHashMap;
@@ -26,7 +25,10 @@ public class TestSoftHashMap extends Activity {
         softHashMap.put("1", "1");
         softHashMap.put("2", "2");
         Log.i(TAG, "--- " + softHashMap.size() + " ---");
-        Log.i(TAG,"---" + softHashMap.get("1"));
-        Log.i(TAG,"---" + softHashMap.containsKey("1"));
+        Log.i(TAG, "---" + softHashMap.get("1"));
+        Log.i(TAG, "---" + softHashMap.containsKey("1"));
+        outputLog("softHashMap.size:" + softHashMap.size());
+        outputLog("softHashMap.get(1):" + softHashMap.get("1"));
+        outputLog("softHashMap.get(2):" + softHashMap.get("2"));
     }
 }

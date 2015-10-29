@@ -12,16 +12,24 @@
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Holo.Light">
         <activity
-            android:label="android common Sample"
-            android:name=".ListSampleActivity">
+            android:name=".ListSampleActivity"
+            android:label="android common Sample">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:label="Tools/handler"
-            android:name=".TestDeferredHandler">
+            android:name=".TestDeferredHandler"
+            android:label="Tools/DeferredHandler">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.pheth.android.sample.path.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TestSoftHashMap"
+            android:label="Tools/SoftHashMap">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="com.pheth.android.sample.path.SAMPLE" />

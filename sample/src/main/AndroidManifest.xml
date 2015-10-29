@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.pheth.android">
+
     <uses-sdk
         android:minSdkVersion="16"
         android:targetSdkVersion="19" />
@@ -9,11 +10,21 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
-        <activity android:name="com.pheth.android.MainActivity">
+        android:theme="@android:style/Theme.Holo.Light">
+        <activity
+            android:label="android common Sample"
+            android:name=".ListSampleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Tools/handler"
+            android:name=".TestDeferredHandler">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.pheth.android.sample.path.SAMPLE" />
             </intent-filter>
         </activity>
 

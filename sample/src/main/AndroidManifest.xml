@@ -43,6 +43,15 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".TestWorkerThread"
+            android:label="Tools/WorkerThread">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="com.pheth.android.sample.path.SAMPLE" />
+            </intent-filter>
+
+        </activity>
+
     </application>
 
 </manifest>

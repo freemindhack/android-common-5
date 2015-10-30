@@ -35,6 +35,13 @@
                 <category android:name="com.pheth.android.sample.path.SAMPLE" />
             </intent-filter>
         </activity>
+        <activity android:name=".TestStringEncrypt"
+            android:label="Tools/StringEncrypt">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="com.pheth.android.sample.path.SAMPLE" />
+            </intent-filter>
+        </activity>
 
     </application>
 

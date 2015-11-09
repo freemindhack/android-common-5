@@ -1,6 +1,5 @@
 package com.pheth.android;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.os.Looper;
 import android.os.MessageQueue;
@@ -16,7 +15,7 @@ import com.pheth.android.library.utils.DeferredHandler;
  * Email: danhantao@yeah.net
  * QQ: 1152892859
  */
-public class TestDeferredHandler extends Activity {
+public class TestDeferredHandler extends PrintLogActivity {
     private static final String TAG = TestDeferredHandler.class.getSimpleName();
     DeferredHandler deferredHandler = new DeferredHandler();
     // DeferedHandler 1.excute main 2.queue
@@ -66,7 +65,7 @@ public class TestDeferredHandler extends Activity {
         Looper.myQueue().addIdleHandler(new MessageQueue.IdleHandler() {
             @Override
             public boolean queueIdle() {
-                Log.i(TAG,"queueIde");
+                Log.i(TAG, "queueIde");
                 return false;
             }
         });
@@ -74,7 +73,8 @@ public class TestDeferredHandler extends Activity {
         Looper.myQueue().addIdleHandler(new MessageQueue.IdleHandler() {
             @Override
             public boolean queueIdle() {
-                Log.i(TAG,"queueIde continue");
+//                Log.i(TAG,"queueIde continue");
+                outputLog("queueIde continue");
                 return true;
             }
         });

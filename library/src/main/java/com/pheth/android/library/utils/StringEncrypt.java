@@ -1,5 +1,8 @@
 package com.pheth.android.library.utils;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
@@ -37,4 +40,5 @@ public class StringEncrypt {
         }
         return sb.toString();
     }
+
 }

@@ -12,6 +12,7 @@ import android.util.DisplayMetrics;
  * Update: danhantao(2015-11-25 17:30)
  * Email: danhantao@yeah.net
  * QQ: 1152892859
+ *
  */
 public class ScreenUtils {
     /**
